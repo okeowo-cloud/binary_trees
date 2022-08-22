@@ -30,4 +30,7 @@ typedef struct binary_tree_s avl_t;
 
 typedef struct binary_tree_s heap_t;
 
+/* print a binary tree */
+void binary_tree_print(const binary_tree_t *);
+
 #endif /* __BINARY_TREES_H_ */
