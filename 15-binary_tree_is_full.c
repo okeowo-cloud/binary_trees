@@ -14,7 +14,7 @@ int binary_tree_is_full(const binary_tree_t *tree)
 	int leftSubTree = binary_tree_is_full(tree->left);
 	int rightSubTree = binary_tree_is_full(tree->right);
 
-	if (tree->left && tree->right)
-		return (leftSubTree && rightSubTree);
-	return (0);
+	if (leftSubTree == 0 || rightSubTree == 0)
+		return (0);
+	return (1);
 }
